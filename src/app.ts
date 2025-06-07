@@ -10,6 +10,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+// see data/weather.json for the mock data
 const weatherService = new WeatherService('https://mp6c02dee9ef0803dfc7.free.beeceptor.com');
 
 const apiKeyPath = path.resolve(__dirname, '../openapi.apikey');
