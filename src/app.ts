@@ -37,13 +37,13 @@ const askQuestion = () => {
 
             const weatherData = await weatherService.getWeatherByZip(zipCodeParsed);
             if (weatherData === 'NO_WEATHER_DATA_FOR_ZIP') {
-                console.error('No weather data found for the provided zip code. Please try again.');
+                console.error('\nWEATHER IN YOUR AREA: No weather data found for the provided zip code. Please try again.');
                 askQuestion();
                 return;
             } 
 
             const aiResponse = await openAIService.makeAFriendlyWeatherMessage(weatherData);
-            console.log(`AI Response: ${aiResponse}`);
+            console.log(`\nWEATHER IN YOUR AREA:\n${aiResponse}`);
         } catch (error) {
             console.error('Error:', (error as Error).message);
         } finally {

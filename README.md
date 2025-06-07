@@ -54,7 +54,9 @@ rmartinez@BIBOYGPDLINUX:~/codes/rag-demo-weather/weather-cli-app$ ts-node src/ap
 Hello! Tell me where you are located? Hello there! I am from Beverly Hills 90210 California.
 Parsed Zip Code: 90210
 [DEBUG] Fetching weather data from: https://mp6c02dee9ef0803dfc7.free.beeceptor.com/get-weather?zip=90210
-AI Response: Today in Beverly Hills, CA, the current temperature is 78°F with clear skies and a light breeze. Enjoy the warm and clear weather throughout the day!
+
+WEATHER IN YOUR AREA:
+Today in Beverly Hills, CA, the current temperature is 78°F with clear skies and a light breeze. Enjoy the warm and clear weather throughout the day!
 
 
 Hello! Tell me where you are located? I from Torrance CA
@@ -65,13 +67,17 @@ No valid zip code found in the input. Please try again.
 Hello! Tell me where you are located? I am from Torrance 90503 CA
 Parsed Zip Code: 90503
 [DEBUG] Fetching weather data from: https://mp6c02dee9ef0803dfc7.free.beeceptor.com/get-weather?zip=90503
+
+WEATHER IN YOUR AREA:
 No weather data found for the provided zip code. Please try again.
 
 
 Hello! Tell me where you are located? I from Montery Park, CAlifornia 91754
 Parsed Zip Code: 91754
 [DEBUG] Fetching weather data from: https://mp6c02dee9ef0803dfc7.free.beeceptor.com/get-weather?zip=91754
-AI Response: Good morning from Monterey Park, CA! Today's weather is partly cloudy with a high of 80°F and a low of 60°F. Don't forget your sunglasses for the afternoon sun! ☀️
+
+WEATHER IN YOUR AREA: 
+Good morning! Today in Monterey Park, CA, the current temperature is 75°F with partly cloudy skies. It's a great day to get outside and enjoy the weather. Have a wonderful day!
 
 
 ```
