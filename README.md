@@ -13,7 +13,7 @@ This is a command line interface (CLI) application that allows users to ask ques
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/weather-cli-app.git
+   git clone https://github.com/juneym/rag-demo-weather.git
    ```
 
 2. Navigate to the project directory:
@@ -27,6 +27,16 @@ This is a command line interface (CLI) application that allows users to ask ques
    ```
 
 ## Usage
+
+
+Note: Ensure that `openapi.apikey` is created with your own personal OpenAPI API secret
+
+```
+   echo '<your OpenAPI Key>' > openapi.apikey
+```
+
+The `openapi.apikey` is in the `.gitignore` file to prevent accidental commit.
+
 
 To run the application, use the following command in your terminal:
 
