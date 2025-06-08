@@ -4,6 +4,8 @@ import { OpenAIService } from './services/openAIService';
 import { parseInput } from './utils/index';
 import * as fs from 'fs';
 import * as path from 'path';
+import 'dotenv/config';
+
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -13,12 +15,12 @@ const rl = readline.createInterface({
 // see data/weather.json for the mock data
 const weatherService = new WeatherService('https://mp6c02dee9ef0803dfc7.free.beeceptor.com');
 
-const apiKeyPath = path.resolve(__dirname, '../openapi.apikey');
-if (!fs.existsSync(apiKeyPath)) {
-    console.error('API key file not found. Please create openapi.apikey with your OpenAI API key. API Key Path ', apiKeyPath);
+
+const llmApiKey = process.env.OPENAI_API_KEY;
+if (!llmApiKey) {
+    console.error('Error: OPENAI_API_KEY is not set in the environment variables.');
     process.exit(1);
-}
-const llmApiKey = fs.readFileSync(apiKeyPath, 'utf-8').trim();
+}   
 
 const openAIService = new OpenAIService(llmApiKey, 'gpt-3.5-turbo');
 

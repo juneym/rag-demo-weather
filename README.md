@@ -29,13 +29,13 @@ This is a command line interface (CLI) application that allows users to ask ques
 ## Usage
 
 
-Note: Ensure that `openapi.apikey` is created with your own personal OpenAPI API secret
+Note: Ensure that `.env` is created with your own personal OpenAPI API secret
 
 ```
-   echo '<your OpenAPI Key>' > openapi.apikey
+   echo 'OPENAI_API_KEY=<your OpenAPI Key>' > .env
 ```
 
-The `openapi.apikey` is in the `.gitignore` file to prevent accidental commit.
+The `.env` is in the `.gitignore` file to prevent accidental commit.
 
 
 To run the application, use the following command in your terminal:
@@ -48,7 +48,7 @@ ts-node src/app.ts
 
 ```
 
-rmartinez@BIBOYGPDLINUX:~/codes/rag-demo-weather/weather-cli-app$ ts-node src/app.ts 
+rmartinez@BIBOYGPDLINUX:~/codes/ai-engineering/weather-cli-app-rag$ ts-node src/app.ts 
 
 
 Hello! Tell me where you are located? Hello there! I am from Beverly Hills 90210 California.

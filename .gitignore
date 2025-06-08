@@ -1,3 +1,4 @@
+.env
 openapi.apikey
 node_modules/
 *.apikey
