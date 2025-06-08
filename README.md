@@ -18,7 +18,7 @@ This is a command line interface (CLI) application that allows users to ask ques
 
 2. Navigate to the project directory:
    ```
-   cd weather-cli-app
+   cd rag-demo-weather
    ```
 
 3. Install the dependencies:
@@ -48,7 +48,7 @@ ts-node src/app.ts
 
 ```
 
-rmartinez@BIBOYGPDLINUX:~/codes/ai-engineering/weather-cli-app-rag$ ts-node src/app.ts 
+rmartinez@BIBOYGPDLINUX:~/codes/ai-engineering/rag-demo-weather$ ts-node src/app.ts 
 
 
 Hello! Tell me where you are located? Hello there! I am from Beverly Hills 90210 California.
