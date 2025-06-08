@@ -6,6 +6,7 @@ This is a command line interface (CLI) application that allows users to ask ques
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Diagram](#diagram)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -82,6 +83,37 @@ Good morning! Today in Monterey Park, CA, the current temperature is 75°F with 
 
 ```
 
+
+## Diagram
+
+Below is a high-level diagram illustrating the integration of the main classes/entities and external services:
+
+```plaintext
++--------------------+       +--------------------+
+|   CLI Application  |       |  OpenAI API        |
+| (src/app.ts)       |<----->| (Language Model)   |
++--------------------+       +--------------------+
+         |
+         |
+         v
++--------------------+
+| Weather Service    |
+| (Mock HTTP API)    |
++--------------------+
+         |
+         |
+         v
++--------------------+
+| Weather Parser     |
+| (Extracts Zip Code)|
++--------------------+
+```
+
+### Description:
+1. **CLI Application**: The entry point of the application (`src/app.ts`) interacts with the user to gather location details.
+2. **Weather Parser**: Extracts the zip code from the user's input using regex or similar logic.
+3. **Weather Service**: Fetches weather data from a mock HTTP API based on the zip code.
+4. **OpenAI API**: Processes the weather data and generates a user-friendly response using the OpenAI language model.
 
 ## Contributing
 
